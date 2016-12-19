@@ -1,0 +1,17 @@
+[package]
+name = "rotary-encoder"
+version = "0.1.0"
+authors = ["Eitan Mosenkis <eitan@mosenkis.net>"]
+description = "Interpret rotary encoder signals as rotation direction"
+repository = "https://github.com/emosenkis/rotary-encoder-rs"
+documentation = "https://docs.rs/rotary-encoder"
+keywords = ["rotary", "encoder"]
+license = "MIT"
+
+[dependencies]
+futures = "0.1"
+
+[dev-dependencies]
+mio = "0.6"
+sysfs_gpio = { version = "0.5", features = ["tokio"] }
+tokio-core = "0.1"
